@@ -1,16 +1,8 @@
-# opensource_flutter
+# Hacktober Fest 2022 Flutter Open Source Project
 
-A new Flutter project.
+This is an open source flutter project for begineers who want to contribute and explore the world of open source
 
-## Getting Started
+How can you contribute to this project?
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. You can modify the currently available pages. Search for TODO's you will get to the pages that you can modify.
+2. You can add new page widget in the pages folder with proper numbering and according to the page template and add a new page button in the home page and give proper values in the named parameters.
