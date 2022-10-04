@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
@@ -14,23 +13,22 @@ class Page13 extends StatefulWidget {
 class _Page13State extends State<Page13> {
   static const initialData = 'Tap button below';
 
-  void _handleRandomPress() => randomNumberController.add(
-        Random().nextInt(100).toString(),
-      );
+  void _handleRandomPress() =>
+      randomNotifier.value = Random().nextInt(100).toString();
 
-  void _handleResetPress() => randomNumberController.add(initialData);
+  void _handleResetPress() => randomNotifier.value = initialData;
 
-  late StreamController<String> randomNumberController;
+  late ValueNotifier<String> randomNotifier;
 
   @override
   void initState() {
-    randomNumberController = StreamController();
+    randomNotifier = ValueNotifier(initialData);
     super.initState();
   }
 
   @override
   void dispose() {
-    randomNumberController.close();
+    randomNotifier.dispose();
     super.dispose();
   }
 
@@ -38,18 +36,15 @@ class _Page13State extends State<Page13> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Page 12'),
+        title: const Text('Page 13'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            StreamBuilder<String>(
-              stream: randomNumberController.stream,
-              initialData: initialData,
-              builder: (_, snapshot) {
-                return Text(snapshot.data!, textScaleFactor: 3);
-              },
+            ValueListenableBuilder<String>(
+              valueListenable: randomNotifier,
+              builder: (_, value, __) => Text(value, textScaleFactor: 3),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),
