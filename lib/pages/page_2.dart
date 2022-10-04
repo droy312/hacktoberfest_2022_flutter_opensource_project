@@ -6,8 +6,17 @@ class Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Page 2')),
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            ElevatedButton(onPressed: () {}, child: const Text('Button 1')),
+            ElevatedButton(onPressed: () {}, child: const Text('Button 2')),
+            ElevatedButton(onPressed: () {}, child: const Text('Button 3')),
+          ],
+        ),
+      ),
     );
   }
 }
