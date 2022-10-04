@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
@@ -6,22 +7,32 @@ import 'package:flutter/material.dart';
 class Page13 extends StatefulWidget {
   const Page13({super.key});
 
-  static const initialText = 'Tap button below';
-
   @override
   State<Page13> createState() => _Page13State();
 }
 
 class _Page13State extends State<Page13> {
-  String random = Page13.initialText;
+  static const initialData = 'Tap button below';
 
-  void _handleRandomPress() => setState(
-        () => random = Random().nextInt(100).toString(),
+  void _handleRandomPress() => randomNumberController.add(
+        Random().nextInt(100).toString(),
       );
 
-  void _handleResetPress() => setState(
-        () => random = Page13.initialText,
-      );
+  void _handleResetPress() => randomNumberController.add(initialData);
+
+  late StreamController<String> randomNumberController;
+
+  @override
+  void initState() {
+    randomNumberController = StreamController();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    randomNumberController.close();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +44,13 @@ class _Page13State extends State<Page13> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(random, textScaleFactor: 3),
+            StreamBuilder<String>(
+              stream: randomNumberController.stream,
+              initialData: initialData,
+              builder: (_, snapshot) {
+                return Text(snapshot.data!, textScaleFactor: 3);
+              },
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),
               child: TextButton.icon(
