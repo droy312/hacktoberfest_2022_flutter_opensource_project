@@ -36,7 +36,25 @@ class _Page13State extends State<Page13> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Page 13'),
+        title: Hero(
+          tag: 'page_13_transition_key',
+          flightShuttleBuilder: (
+            _,
+            animation,
+            __,
+            ___,
+            ____,
+          ) =>
+              Opacity(
+            opacity: animation.value,
+            child: Container(
+              height: 100,
+              width: double.infinity,
+              color: Colors.blueAccent,
+            ),
+          ),
+          child: const Text('Page 13'),
+        ),
       ),
       body: Center(
         child: Column(
