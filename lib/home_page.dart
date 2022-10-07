@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'pages/page_1.dart';
-import 'pages/page_10.dart';
 import 'pages/page_2.dart';
 import 'pages/page_3.dart';
 import 'pages/page_4.dart';
@@ -9,9 +8,12 @@ import 'pages/page_6.dart';
 import 'pages/page_7.dart';
 import 'pages/page_8.dart';
 import 'pages/page_9.dart';
+import 'pages/page_10.dart';
 import 'pages/page_11.dart';
 import 'pages/page_12.dart';
 import 'pages/page_13.dart';
+import 'pages/page_14.dart';
+import 'pages/page_15.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -35,6 +37,8 @@ class HomePage extends StatelessWidget {
           PageButton(pageNumber: 11, page: Page11()),
           PageButton(pageNumber: 12, page: Page12()),
           PageButton(pageNumber: 13, page: Page13()),
+          PageButton(pageNumber: 14, page: Page14()),
+          PageButton(pageNumber: 15, page: Page15()),
 
           /// TODO:
           /// Want to add more page buttons?
