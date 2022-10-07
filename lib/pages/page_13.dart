@@ -13,27 +13,40 @@ class Page13 extends StatefulWidget {
 }
 
 class _Page13State extends State<Page13> {
-  String random = Page13.initialText;
+  late final ValueNotifier<String> randomNotifier;
 
-  void _handleRandomPress() => setState(
-        () => random = Random().nextInt(100).toString(),
-      );
+  @override
+  void initState() {
+    randomNotifier = ValueNotifier(Page13.initialText);
+    super.initState();
+  }
 
-  void _handleResetPress() => setState(
-        () => random = Page13.initialText,
-      );
+  @override
+  void dispose() {
+    randomNotifier.dispose();
+    super.dispose();
+  }
+
+  void _handleRandomPress() =>
+      randomNotifier.value = Random().nextInt(100).toString();
+
+  void _handleResetPress() => randomNotifier.value = Page13.initialText;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Page 12'),
+        title: const Text('Page 13'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(random, textScaleFactor: 3),
+            ValueListenableBuilder<String>(
+              valueListenable: randomNotifier,
+              builder: (context, value, child) =>
+                  Text(value, textScaleFactor: 3),
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),
               child: TextButton.icon(
