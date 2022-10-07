@@ -36,7 +36,10 @@ class HomePage extends StatelessWidget {
           PageButton(pageNumber: 10, page: Page10()),
           PageButton(pageNumber: 11, page: Page11()),
           PageButton(pageNumber: 12, page: Page12()),
-          PageButton(pageNumber: 13, page: Page13()),
+          Hero(
+            tag: 'page_13_transition_key',
+            child: PageButton(pageNumber: 13, page: Page13()),
+          ),
           PageButton(pageNumber: 14, page: Page14()),
           PageButton(pageNumber: 15, page: Page15()),
 
