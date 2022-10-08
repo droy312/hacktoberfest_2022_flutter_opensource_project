@@ -14,6 +14,7 @@ import 'pages/page_12.dart';
 import 'pages/page_13.dart';
 import 'pages/page_14.dart';
 import 'pages/page_15.dart';
+import 'pages/page_16.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -42,6 +43,7 @@ class HomePage extends StatelessWidget {
           ),
           PageButton(pageNumber: 14, page: Page14()),
           PageButton(pageNumber: 15, page: Page15()),
+          PageButton(pageNumber: 16, page: Page16()),
 
           /// TODO:
           /// Want to add more page buttons?
