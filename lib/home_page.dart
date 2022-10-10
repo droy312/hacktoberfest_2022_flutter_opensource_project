@@ -16,7 +16,7 @@ import 'pages/page_14.dart';
 import 'pages/page_15.dart';
 import 'pages/page_16.dart';
 import 'pages/page_17.dart';
-import 'pages/page_18.dart';
+import 'pages/pages.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

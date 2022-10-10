@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of 'pages.dart';
 
 // TODO: Beautify this page according to your imagination
 class Page18 extends StatelessWidget {
