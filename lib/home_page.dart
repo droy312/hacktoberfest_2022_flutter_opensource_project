@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
               PageButton(pageNumber: 16, page: Page16()),
               PageButton(pageNumber: 17, page: Page17()),
               PageButton(pageNumber: 18, page: Page18()),
-              PageButton(pageNumber: 20, page: Page20()),
+              PageButton(pageNumber: 21, page: Page21()),
 
               /// TODO:
               /// Want to add more page buttons?
