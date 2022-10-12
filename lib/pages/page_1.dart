@@ -11,7 +11,7 @@ class Page1 extends StatelessWidget {
         child: Text(
           'Page 1',
           style: TextStyle(
-            color: Colors.cyan,
+            color: Colors.redAccent,
           ),
         ),
       ),
