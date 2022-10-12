@@ -6,8 +6,6 @@ class Page15 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Page 15')),
     return Scaffold(
       backgroundColor: Colors.grey,
       appBar: AppBar(
@@ -25,7 +23,7 @@ class Page15 extends StatelessWidget {
               'Hola',
               style: TextStyle(
                   fontSize: MediaQuery.of(context).size.width * 0.15,
-                  fontWeight: FontWeight.light,
+                  fontWeight: FontWeight.w200,
                   color: Colors.orange[600]),
             ),
             Padding(
@@ -38,7 +36,7 @@ class Page15 extends StatelessWidget {
               'to page 15',
               style: TextStyle(
                 color: Colors.green,
-                fontWeight: FontWeight.light,
+                fontWeight: FontWeight.w200,
                 fontSize: 50,
               ),
             )
