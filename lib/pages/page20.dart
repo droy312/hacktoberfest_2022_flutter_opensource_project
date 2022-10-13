@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-// TODO: Beautify this page according to your imagination
 class Page20 extends StatelessWidget {
   const Page20({super.key});
 
