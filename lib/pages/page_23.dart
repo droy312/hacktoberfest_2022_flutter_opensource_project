@@ -8,6 +8,6 @@ class Page23 extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(child: Text('Page 23')),
-    );
+     );
   }
 }
