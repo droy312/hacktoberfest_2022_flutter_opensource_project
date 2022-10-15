@@ -8,6 +8,43 @@ class Page17 extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(child: Text('Page 17')),
+    return Scaffold(
+      backgroundColor: Colors.yellow,
+      appBar: AppBar(
+        leading: const Icon(Icons.arrow_back),
+        title: const Text('Page 17'),
+        centerTitle: true,
+        elevation: 0,
+        backgroundColor: Colors.deepPurple[600],
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Hello',
+              style: TextStyle(
+                  fontSize: MediaQuery.of(context).size.width * 0.15,
+                  fontWeight: FontWeight.light,
+                  color: Colors.blue[600]),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.network(
+                'https://images.unsplash.com/photo-1472120435266-53107fd0c44a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+              ),
+            ),
+            const Text(
+              'page 18',
+              style: TextStyle(
+                color: Colors.brown,
+                fontWeight: FontWeight.bolder,
+                fontSize: 50,
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
