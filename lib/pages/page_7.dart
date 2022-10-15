@@ -4,10 +4,32 @@ import 'package:flutter/material.dart';
 class Page7 extends StatelessWidget {
   const Page7({super.key});
 
+  static const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Page 7')),
+    return MaterialApp(
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: darkBlue,
+      ),
+      debugShowCheckedModeBanner: false,
+      home: const Scaffold(
+        body: Center(
+          child: CustomWidget(),
+        ),
+      ),
+    );
+  }
+}
+
+class CustomWidget extends StatelessWidget {
+  const CustomWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      'Hello, World!',
+      style: Theme.of(context).textTheme.headline4,
     );
   }
 }
