@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+
 // TODO: Beautify this page according to your imagination
 class Page18 extends StatelessWidget {
   const Page18({super.key});
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Page 18')),
     return Scaffold(
       backgroundColor: Colors.yellow,
       appBar: AppBar(
@@ -23,7 +22,7 @@ class Page18 extends StatelessWidget {
               'Konnichiwa',
               style: TextStyle(
                   fontSize: MediaQuery.of(context).size.width * 0.15,
-                  fontWeight: FontWeight.light,
+                  fontWeight: FontWeight.w200,
                   color: Colors.pink[600]),
             ),
             Padding(
@@ -35,8 +34,8 @@ class Page18 extends StatelessWidget {
             const Text(
               'page 18',
               style: TextStyle(
-                color: Colors.aqua,
-                fontWeight: FontWeight.light,
+                color: Colors.lightBlue,
+                fontWeight: FontWeight.w200,
                 fontSize: 50,
               ),
             )

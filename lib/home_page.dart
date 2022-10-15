@@ -18,7 +18,7 @@ import 'pages/page_16.dart';
 import 'pages/page_17.dart';
 import 'pages/page_18.dart';
 import 'pages/page_19/page_19.dart';
-import 'pages/page20.dart';
+import 'pages/page_20.dart';
 import 'pages/page_21.dart';
 import 'pages/page_22.dart';
 import 'pages/page_23.dart';
