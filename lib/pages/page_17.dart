@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // TODO: Beautify this page according to your imagination
-class Page17 extends StatelessWidget {
+class Page17 extends StatelessWidget{
   const Page17({super.key});
 
   @override
