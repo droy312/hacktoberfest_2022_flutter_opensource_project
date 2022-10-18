@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:opensource_flutter/pages/page_27/page_26.dart';
 import 'pages/page_1.dart';
 import 'pages/page_2.dart';
 import 'pages/page_3.dart';
@@ -26,6 +25,7 @@ import 'pages/page_23.dart';
 import 'pages/page_24.dart';
 import 'pages/page_25.dart';
 import 'pages/page_26.dart';
+import 'pages/page_27/page_27.dart';
 import 'pages/page_28.dart';
 
 class HomePage extends StatelessWidget {
