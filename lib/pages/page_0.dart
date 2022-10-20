@@ -1,9 +1,7 @@
-   import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-void main() => runApp(const MaterialApp(home: page0()));
-
-class page0 extends StatelessWidget {
-  const page0({Key? key}) : super(key: key);
+class Page0 extends StatelessWidget {
+  const Page0({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     //Pre Defining the Variable
@@ -13,12 +11,8 @@ class page0 extends StatelessWidget {
     return MaterialApp(
       title: 'Intro For Project',
       home: Scaffold(
-
-          
           body: Column(
         children: <Widget>[
-          
-
           Container(
               height: (2 * height) / 3,
               width: width,
@@ -42,8 +36,6 @@ class page0 extends StatelessWidget {
                               blurRadius: 60,
                             ),
                           ])))),
-        
-
           Container(
               color: Colors.black,
               height: height / 3,
