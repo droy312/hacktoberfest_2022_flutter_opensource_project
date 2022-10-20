@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pages/Page_0.dart';
 import 'pages/page_1.dart';
 import 'pages/page_2.dart';
 import 'pages/page_3.dart';
@@ -28,6 +29,7 @@ import 'pages/page_26.dart';
 import 'pages/page_27/page_27.dart';
 import 'pages/page_28.dart';
 import 'pages/page_29.dart';
+import 'pages/page_30.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
