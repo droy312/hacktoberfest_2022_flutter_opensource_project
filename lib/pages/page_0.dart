@@ -11,15 +11,12 @@ class Page0 extends StatelessWidget {
     return MaterialApp(
       title: 'Intro For Project',
       home: Scaffold(
-          body: Column(
-        children: <Widget>[
-          Container(
-              height: (2 * height) / 3,
+          body: Container(
               width: width,
               color: Colors.black,
               child: Center(
                   child: Text(
-                      "Welcome To Hactober'22 \n\n     Explore The Beauty \n\n                  Of",
+                      "Welcome To Hactober'22\n\n\t\tExplore The Beauty\n\n\t\t\t\tOf\n\n\t\tHacktoberfest 2022",
                       style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
@@ -35,20 +32,7 @@ class Page0 extends StatelessWidget {
                               color: shadowColor,
                               blurRadius: 60,
                             ),
-                          ])))),
-          Container(
-              color: Colors.black,
-              height: height / 3,
-              width: width,
-              child: const Expanded(
-                child: Center(
-                  child: Image(
-                    image: AssetImage('android/Assets/Img1.webp'),
-                  ),
-                ),
-              )),
-        ],
-      )),
+                          ]))))),
     );
   }
 }

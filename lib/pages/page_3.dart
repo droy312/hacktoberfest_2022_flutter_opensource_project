@@ -19,12 +19,12 @@ class _Page3State extends State<Page3> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
           child: Column(
             children: <Widget>[
               Row(
                 children: <Widget>[
-                  Container(
+                  SizedBox(
                     width: 28,
                     height: 30,
                     child: Stack(
@@ -35,18 +35,18 @@ class _Page3State extends State<Page3> {
                               width: 5,
                             ),
                             AnimatedContainer(
-                              padding: EdgeInsets.all(20.0),
-                              duration: Duration(
+                              padding: const EdgeInsets.all(20.0),
+                              duration: const Duration(
                                 microseconds: 1000,
                               ),
                               width: 20,
                               height: 30,
-                              margin: EdgeInsets.symmetric(
+                              margin: const EdgeInsets.symmetric(
                                 horizontal: 0.01,
                               ),
                               decoration: BoxDecoration(
                                 color: kSeatAvailableColor,
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(4.0),
                                   topRight: Radius.circular(4.0),
                                 ),
@@ -60,22 +60,22 @@ class _Page3State extends State<Page3> {
                         ),
                         Row(
                           children: <Widget>[
-                            SizedBox(
+                            const SizedBox(
                               width: 7.5,
                             ),
                             Column(
                               children: <Widget>[
-                                SizedBox(
+                                const SizedBox(
                                   height: 25,
                                 ),
                                 Container(
                                   width: 15,
                                   height: 5,
-                                  margin: EdgeInsets.symmetric(
+                                  margin: const EdgeInsets.symmetric(
                                     horizontal: 0.01,
                                   ),
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.only(
+                                    borderRadius: const BorderRadius.only(
                                       topLeft: Radius.circular(2.0),
                                       topRight: Radius.circular(2.0),
                                     ),
@@ -92,18 +92,18 @@ class _Page3State extends State<Page3> {
                         ),
                         Column(
                           children: <Widget>[
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                               height: 12.5,
                             ),
                             Container(
                               width: 5,
                               height: 17.5,
-                              margin: EdgeInsets.symmetric(
+                              margin: const EdgeInsets.symmetric(
                                 horizontal: 0.01,
                               ),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(1.0),
                                   topRight: Radius.circular(1.0),
                                 ),

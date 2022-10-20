@@ -34,8 +34,12 @@ import 'pages/page_30.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  final pages = const[
-    PageButton(pageNumber: 1, page: Page0()),
+  final pages = const [
+    SizedBox(height: 100),
+    SizedBox(height: 100),
+    SizedBox(height: 100),
+
+    PageButton(pageNumber: 0, page: Page0()),
     PageButton(pageNumber: 1, page: Page1()),
     PageButton(pageNumber: 2, page: Page2()),
     PageButton(pageNumber: 3, page: Page3()),
@@ -68,7 +72,7 @@ class HomePage extends StatelessWidget {
     PageButton(pageNumber: 27, page: Page27()),
     PageButton(pageNumber: 28, page: Page28()),
     PageButton(pageNumber: 29, page: Page29()),
-    PageButton(pageNumber: 29, page: Page30()),
+    PageButton(pageNumber: 30, page: Page30()),
 
     /// TODO:
     /// Want to add more page buttons?
@@ -82,23 +86,26 @@ class HomePage extends StatelessWidget {
     /// ```dart
     /// PageButton(pageNumber: /*proper page number*/, page: /*newly created page number*/),
     /// ```
+
+    SizedBox(height: 100),
+    SizedBox(height: 100),
+    SizedBox(height: 100),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: GridView.builder(
-          itemCount: pages.length,
+            itemCount: pages.length,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
               childAspectRatio: (2 / 1),
             ),
-            itemBuilder: (context, index)  {
-            return pages[index];
-        })
-    );
+            itemBuilder: (context, index) {
+              return pages[index];
+            }));
   }
 }
 
