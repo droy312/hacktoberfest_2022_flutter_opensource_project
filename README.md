@@ -1,4 +1,4 @@
-# Hacktober Fest 2022 Flutter Open Source Project
+# Hacktober Fest 2022 Flutter Open Source Project.
 
 This is an open source flutter project for begineers who want to contribute and explore the world of open source
 
