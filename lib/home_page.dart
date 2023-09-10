@@ -146,4 +146,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         brightness: Brightness.dark,
-     
+      ),
+      home: const HomePage(),
+    );
+  }
+}
