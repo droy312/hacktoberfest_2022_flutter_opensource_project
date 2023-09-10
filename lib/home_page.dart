@@ -73,3 +73,19 @@ class HomePage extends StatelessWidget {
     PageButton(pageNumber: 24, page: const Page24()),
     PageButton(pageNumber: 25, page: const Page25()),
     PageButton(pageNumber: 26, page: const Page26()),
+    PageButton(pageNumber: 27, page: const Page27()),
+    PageButton(pageNumber: 28, page: const Page28()),
+    PageButton(pageNumber: 29, page: const Page29()),
+    PageButton(pageNumber: 30, page: const Page30()),
+    PageButton(pageNumber: 31, page: const Page31()),
+    PageButton(pageNumber: 32, page: const Page32()),
+    PageButton(pageNumber: 33, page: const Page33()),
+    PageButton(pageNumber: 34, page: const Page34()),
+    PageButton(pageNumber: 35, page: const Page35()),
+    const SizedBox(height: 100),
+    const SizedBox(height: 100),
+    const SizedBox(height: 100),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
