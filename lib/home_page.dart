@@ -106,3 +106,26 @@ class HomePage extends StatelessWidget {
   }
 }
 
+class PageButton extends StatelessWidget {
+  final int pageNumber;
+  final Widget page;
+
+  const PageButton({
+    Key? key, // Corrected the constructor syntax
+    required this.pageNumber,
+    required this.page,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        ElevatedButton(
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (_) => page));
+          },
+          child: Text('Page $pageNumber'),
+        ),
+      ],
+    );
+  }
