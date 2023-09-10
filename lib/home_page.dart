@@ -89,3 +89,20 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return Scaffold(
+      body: GridView.builder(
+        itemCount: pages.length,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          crossAxisSpacing: 8,
+          mainAxisSpacing: 8,
+          childAspectRatio: (2 / 1),
+        ),
+        itemBuilder: (context, index) {
+          return pages[index];
+        },
+      ),
+    );
+  }
+}
+
