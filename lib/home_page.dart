@@ -129,3 +129,8 @@ class PageButton extends StatelessWidget {
       ],
     );
   }
+}
+
+void main() {
+  runApp(const MyApp());
+}
