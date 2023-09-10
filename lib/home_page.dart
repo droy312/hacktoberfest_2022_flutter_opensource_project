@@ -12,7 +12,7 @@ import 'pages/page_9.dart';
 import 'pages/page_10.dart';
 import 'pages/page_11.dart';
 import 'pages/page_12.dart';
-import 'pages/page_13.dart';
+import 'pages/page_13.dart'; // Imported Page13
 import 'pages/page_14.dart';
 import 'pages/page_15.dart';
 import 'pages/page_16.dart';
@@ -37,85 +37,72 @@ import 'pages/page_34.dart';
 import 'pages/page_35.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  const HomePage({Key? key}); // Corrected the constructor syntax
 
-  final pages = const [
-    SizedBox(height: 100),
-    SizedBox(height: 100),
-    SizedBox(height: 100),
-
-    PageButton(pageNumber: 0, page: Page0()),
-    PageButton(pageNumber: 1, page: Page1()),
-    PageButton(pageNumber: 2, page: Page2()),
-    PageButton(pageNumber: 3, page: Page3()),
-    PageButton(pageNumber: 4, page: Page4()),
-    PageButton(pageNumber: 5, page: Page5()),
-    PageButton(pageNumber: 6, page: Page6()),
-    PageButton(pageNumber: 7, page: Page7()),
-    PageButton(pageNumber: 8, page: Page8()),
-    PageButton(pageNumber: 9, page: Page9()),
-    PageButton(pageNumber: 10, page: Page10()),
-    PageButton(pageNumber: 11, page: Page11()),
-    PageButton(pageNumber: 12, page: Page12()),
+  final pages = <Widget>[
+    const SizedBox(height: 100),
+    const SizedBox(height: 100),
+    const SizedBox(height: 100),
+    PageButton(pageNumber: 0, page: const Page0()),
+    PageButton(pageNumber: 1, page: const Page1()),
+    PageButton(pageNumber: 2, page: const Page2()),
+    PageButton(pageNumber: 3, page: const Page3()),
+    PageButton(pageNumber: 4, page: const Page4()),
+    PageButton(pageNumber: 5, page: const Page5()),
+    PageButton(pageNumber: 6, page: const Page6()),
+    PageButton(pageNumber: 7, page: const Page7()),
+    PageButton(pageNumber: 8, page: const Page8()),
+    PageButton(pageNumber: 9, page: const Page9()),
+    PageButton(pageNumber: 10, page: const Page10()),
+    PageButton(pageNumber: 11, page: const Page11()),
+    PageButton(pageNumber: 12, page: const Page12()),
     Hero(
       tag: 'page_13_transition_key',
-      child: PageButton(pageNumber: 13, page: Page13()),
+      child: PageButton(pageNumber: 13, page: const Page13()),
     ),
-    PageButton(pageNumber: 14, page: Page14()),
-    PageButton(pageNumber: 15, page: Page15()),
-    PageButton(pageNumber: 16, page: Page16()),
-    PageButton(pageNumber: 17, page: Page17()),
-    PageButton(pageNumber: 18, page: Page18()),
-    PageButton(pageNumber: 19, page: Page19()),
-    PageButton(pageNumber: 20, page: Page20()),
-    PageButton(pageNumber: 21, page: Page21()),
-    PageButton(pageNumber: 22, page: Page22()),
-    PageButton(pageNumber: 23, page: Page23()),
-    PageButton(pageNumber: 24, page: Page24()),
-    PageButton(pageNumber: 25, page: Page25()),
-    PageButton(pageNumber: 26, page: Page26()),
-    PageButton(pageNumber: 27, page: Page27()),
-    PageButton(pageNumber: 28, page: Page28()),
-    PageButton(pageNumber: 29, page: Page29()),
-    PageButton(pageNumber: 30, page: Page30()),
-    PageButton(pageNumber: 31, page: Page31()),
-    PageButton(pageNumber: 32, page: Page32()),
-    PageButton(pageNumber: 33, page: Page33()),
-    PageButton(pageNumber: 34, page: Page34()),
-    PageButton(pageNumber: 35, page: Page35()),
-
-    /// TODO:
-    /// Want to add more page buttons?
-    ///
-    /// Add the below code snippet
-    /// Add the proper page number
-    /// Create a new page in the pages folder
-    /// Add the newly created Page widget in the page named parameter
-    ///
-    /// Code snippet
-    /// ```dart
-    /// PageButton(pageNumber: /*proper page number*/, page: /*newly created page number*/),
-    /// ```
-
-    SizedBox(height: 100),
-    SizedBox(height: 100),
-    SizedBox(height: 100),
+    PageButton(pageNumber: 14, page: const Page14()),
+    PageButton(pageNumber: 15, page: const Page15()),
+    PageButton(pageNumber: 16, page: const Page16()),
+    PageButton(pageNumber: 17, page: const Page17()),
+    PageButton(pageNumber: 18, page: const Page18()),
+    PageButton(pageNumber: 19, page: const Page19()),
+    PageButton(pageNumber: 20, page: const Page20()),
+    PageButton(pageNumber: 21, page: const Page21()),
+    PageButton(pageNumber: 22, page: const Page22()),
+    PageButton(pageNumber: 23, page: const Page23()),
+    PageButton(pageNumber: 24, page: const Page24()),
+    PageButton(pageNumber: 25, page: const Page25()),
+    PageButton(pageNumber: 26, page: const Page26()),
+    PageButton(pageNumber: 27, page: const Page27()),
+    PageButton(pageNumber: 28, page: const Page28()),
+    PageButton(pageNumber: 29, page: const Page29()),
+    PageButton(pageNumber: 30, page: const Page30()),
+    PageButton(pageNumber: 31, page: const Page31()),
+    PageButton(pageNumber: 32, page: const Page32()),
+    PageButton(pageNumber: 33, page: const Page33()),
+    PageButton(pageNumber: 34, page: const Page34()),
+    PageButton(pageNumber: 35, page: const Page35()),
+    const SizedBox(height: 100),
+    const SizedBox(height: 100),
+    const SizedBox(height: 100),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: GridView.builder(
-            itemCount: pages.length,
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
-              crossAxisSpacing: 8,
-              mainAxisSpacing: 8,
-              childAspectRatio: (2 / 1),
-            ),
-            itemBuilder: (context, index) {
-              return pages[index];
-            }));
+      body: GridView.builder(
+        itemCount: pages.length,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          crossAxisSpacing: 8,
+          mainAxisSpacing: 8,
+          childAspectRatio: (2 / 1),
+        ),
+        itemBuilder: (context, index) {
+          return pages[index];
+        },
+      ),
+    );
   }
 }
 
@@ -124,7 +111,7 @@ class PageButton extends StatelessWidget {
   final Widget page;
 
   const PageButton({
-    super.key,
+    Key? key, // Corrected the constructor syntax
     required this.pageNumber,
     required this.page,
   });
@@ -140,6 +127,27 @@ class PageButton extends StatelessWidget {
           child: Text('Page $pageNumber'),
         ),
       ],
+    );
+  }
+}
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}); // Corrected the constructor syntax
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Open source Flutter',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        brightness: Brightness.dark,
+      ),
+      home: const HomePage(),
     );
   }
 }
