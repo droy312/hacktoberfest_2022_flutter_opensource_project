@@ -135,4 +135,10 @@ void main() {
   runApp(const MyApp());
 }
 
-class
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}); // Corrected the constructor syntax
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+     
