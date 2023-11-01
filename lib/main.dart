@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Open source Flutter',
-      debugShowCheckedModeBanner: false, // Remove the debug banner
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.indigo, // Change primarySwatch color to indigo
-        brightness: Brightness.light, // Change brightness to light
+        primarySwatch: Colors.blue,
+        brightness: Brightness.dark,
       ),
       home: const HomePage(),
     );
