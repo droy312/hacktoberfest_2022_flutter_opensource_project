@@ -6,8 +6,8 @@ class Page23 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Page 23')),
+    // return const Scaffold(
+    //   body: Center(child: Text('Page 23')),
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(Icons.arrow_back_ios),
