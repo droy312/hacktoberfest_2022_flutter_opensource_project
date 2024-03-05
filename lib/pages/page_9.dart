@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 
 // TODO: Beautify this page according to your imagination
 class Page9 extends StatefulWidget {
- @override
+  const Page9({super.key});
+
+  @override
   State<Page9> createState() => _Page9State();
 }
 
 class _Page9State extends State<Page9> {
- int counter = 0;
+  int counter = 0;
 
 //Increment Function
   void incrementCounter() {
@@ -25,19 +27,19 @@ class _Page9State extends State<Page9> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor:  Color(0xffFFFFF2),
-      body:  Column(
+    return Scaffold(
+      backgroundColor: const Color(0xffFFFFF2),
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(child: Text('Page 9')),
+          const Center(child: Text('Page 9')),
           Center(
             child: Expanded(
               child: Text(
                 counter.toString(),
                 //Text Styling
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 200,
                   fontWeight: FontWeight.bold,
                   color: Color(0xff41D3BD),

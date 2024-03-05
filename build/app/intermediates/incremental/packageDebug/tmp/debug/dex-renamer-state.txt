@@ -1,4 +1,4 @@
-#Thu Oct 20 11:02:44 IST 2022
-base.0=C\:\\Users\\Dhritiman Roy\\Desktop\\Hacktoberfest 22 Flutter Repo\\opensource_flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Tue Mar 05 22:23:59 NPT 2024
+base.0=D\:\\Android\\AndroidStudioProjects\\hacktoberfest_2022_flutter_opensource_project\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
